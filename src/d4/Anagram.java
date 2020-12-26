@@ -6,7 +6,7 @@ public class Anagram {
 		
 		//대한민국 남성 5명의 키평균과 몸무게평균을 구하라
 		//키의 배열 만들기
-		double height[] = {183,173,160,167,181};
+		double height[] = {100,50,50,50,30};
 		double average = 0;
 		double sum = 0 ;
 		//키 평균 구하기
@@ -27,5 +27,5 @@ public class Anagram {
 		}
 		System.out.println(weight.length + "명의 평균몸무게는" + average2 + "입니다.");
 
-	}
+	}asrgargsrasgasrgargsagsr
 }
