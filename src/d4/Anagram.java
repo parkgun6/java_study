@@ -27,5 +27,5 @@ public class Anagram {
 		}
 		System.out.println(weight.length + "명의 평균몸무게는" + average2 + "입니다.");
 
-	}asrgargsrasgasrgargsagsr
+	}
 }
