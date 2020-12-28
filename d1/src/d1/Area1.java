@@ -2,7 +2,7 @@ package d1;
 
 import java.util.Scanner;
 
-public class Area {
+public class Area1 {
 
 	public static void main(String[] args) {
 		
