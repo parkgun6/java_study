@@ -36,4 +36,4 @@ public class Study2 {
 		System.out.println(m.getResult(index));
 
 	}
-}fdgssdf
+}
