@@ -14,9 +14,4 @@ public class MovieTest {
 
 		Movie[] arr = {m1,m2};
 	}
-
-	@Override
-	public String toString() {
-		return "MovieTest []";
-	}
 }
