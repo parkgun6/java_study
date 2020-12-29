@@ -19,11 +19,12 @@ public class Movie {
 		this.kiss = kiss;
 	}//개발자가 인스턴스변수가없으면 출력을 안함
 	//기본생성자를 지워버림
-
+	
+	
 
 	@Override
 	public String toString() {
 		return "Movie [category=" + category + ", action=" + action + ", kiss=" + kiss + "]";
 	}
-
+	
 }
