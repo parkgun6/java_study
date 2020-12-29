@@ -15,7 +15,7 @@ public String toString() {
 
 public boolean showResult() {
 	
-	return this.content.equals("X");
+	return this.content.equals("O");
 }
 
 }
