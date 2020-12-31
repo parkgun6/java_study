@@ -30,5 +30,5 @@ class BMIServiceTests {//전체테스트할때 동작하는곳
 	System.out.println(bmi);
 	assertEquals(bmi, 18.5);
 	}
-
+	
 }
