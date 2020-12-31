@@ -1,0 +1,20 @@
+package d6;
+
+import java.util.Scanner;
+
+public class MemoTest {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		Memo[] box = new Memo[5];
+		
+		
+		for (int i = 0; i < box.length; i++) {
+			Memo m = box[i];
+			if(m.showResult()) {
+				sysout
+			}
+		}
+	}
+}

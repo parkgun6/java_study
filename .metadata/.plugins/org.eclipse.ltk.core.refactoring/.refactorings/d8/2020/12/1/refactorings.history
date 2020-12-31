@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.d8.domain.weather&apos; to &apos;Weather&apos;&#x0D;&#x0A;- Original project: &apos;d8&apos;&#x0D;&#x0A;- Original element: &apos;org.d8.domain.weather&apos;&#x0D;&#x0A;- Renamed element: &apos;org.d8.domain.Weather&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;weather&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.d8.domain{weather.java[weather" matchStrategy="1" name="Weather" qualified="false" references="true" similarDeclarations="false" stamp="1609393809827" textual="false" version="1.0"/>
+</session>

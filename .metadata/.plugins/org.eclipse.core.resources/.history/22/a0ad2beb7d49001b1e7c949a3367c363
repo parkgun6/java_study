@@ -1,0 +1,10 @@
+package d6;
+
+public class Movie {
+	//데이터의 구조 먼저 정리.
+	String category;
+	int action;
+	int kiss;
+	//클래스에서 블럭을 정함 블럭=메모리
+	
+}

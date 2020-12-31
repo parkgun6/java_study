@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+C:\Users\bitcamp\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+1675798462.index
+1403122149.index
+267500638.index
+3010730235.index
+2063577931.index
+3400048735.index
+3452265542.index
+1775159313.index
+978003540.index
+2868122618.index
+2254799305.index
+674487490.index
+600507754.index
+3738562168.index
+680851516.index
+1365354486.index
+3133297872.index
+3410383372.index
+1422669308.index
+1128940278.index
+4111409914.index
+3889054686.index
+1342771632.index

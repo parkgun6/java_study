@@ -1,0 +1,10 @@
+package d5;
+
+public class SortEx1 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {13,16,47,53,34,17};
+		System.out.println(arr);
+	}
+}

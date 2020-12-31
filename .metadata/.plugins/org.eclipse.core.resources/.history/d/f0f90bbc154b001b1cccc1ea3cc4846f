@@ -1,0 +1,27 @@
+package org.bmi.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class BMIServiceTests {
+
+	@BeforeAll//모든테스트를 시작하기전에 먼저 동작하는것
+	static void setup() {//스태틱이 붙으니 에러가 사라졌다.
+		System.out.println("setup....");
+	}
+	
+	
+	@Test//메서드위에 골뱅이 : 어노테이션
+	void test() {
+		assertEquals(1, 1);//assert단언한다,확실하다
+	}
+
+
+	@Test
+	void test2() {
+		assertEquals(1, 1);//assert단언한다,확실하다
+	}
+
+}

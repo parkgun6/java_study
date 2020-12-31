@@ -1,0 +1,11 @@
+package d7;
+
+import java.util.Scanner;
+AreaService service;
+public class AreaUi {
+	public void getNums(){
+	Scanner scanner = new Scanner(System.in);
+	double r1 = 1;
+	double r2 = 2;
+}
+}

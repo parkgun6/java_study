@@ -1,0 +1,14 @@
+package org.bmi.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BMIServiceTests {
+
+	@Test
+	void test() {
+		assertEquals(1.8, 60);//assert단언한다,확실하다
+	}
+
+}

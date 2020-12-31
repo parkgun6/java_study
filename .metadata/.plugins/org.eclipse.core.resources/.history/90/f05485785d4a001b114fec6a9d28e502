@@ -1,0 +1,8 @@
+package d7;
+
+public class AreaService {
+public double  calcArea(double r1,double r2) {
+	double result = 0;
+	return result;
+}
+}

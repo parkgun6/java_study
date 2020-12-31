@@ -1,0 +1,18 @@
+package d6;
+
+public class Movie {
+	//데이터의 구조 먼저 정리.
+	//인스턴스변수-멤버변수-필드(값)
+	String category;
+	int action;
+	int kiss;
+	//변수선언만하고 초기화는 하지않는다.
+	//클래스에서 블럭을 정함 블럭=메모리
+	public Movie(String category, int action, int kiss) {
+		super();
+		this.category = category;
+		this.action = action;
+		this.kiss = kiss;
+	}
+	
+}

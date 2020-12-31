@@ -1,0 +1,34 @@
+package d5;
+
+import java.util.Arrays;
+
+public class Lotto2 {
+	public static boolean overlap(int[] targetArr,int target) {
+		boolean result = false;
+		
+		for (int i = 0; i < targetArr.length; i++) {
+			if (targetArr[i] == target);
+			targetArr[i] = 1;
+			result = true;
+			break;
+		}
+		return result;		
+	}
+
+	public static void main(String[] args) {
+		
+		//로또
+		
+		int[] ball = new int[6];
+		
+		for (int i = 0; i < ball.length; i++) {
+			int input =(int)((Math.random()*45)+1);
+			boolean overlap = Lotto2.overlap(ball, input);
+			if(overlap) {
+				i--;				
+				continue;
+			}ball[i]=input;
+		}//end for
+		System.out.println(Arrays.toString(ball));
+	}
+}

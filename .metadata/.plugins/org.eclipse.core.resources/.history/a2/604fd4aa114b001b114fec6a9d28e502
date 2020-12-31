@@ -1,0 +1,12 @@
+package d8;
+
+public class BMIService {
+
+	public void calculate(double height, double weight) {
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+package d7;
+
+import java.util.Scanner;
+
+public class PiggyTest {
+
+	public static void main(String[] args) {
+
+		PiggyUI ui = new PiggyUI();
+		ui.userAnswer();
+
+	}
+}
