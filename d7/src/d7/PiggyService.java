@@ -16,7 +16,7 @@ public class PiggyService {
 		String str = "";
 
 		if (balance - money1 < 0) {
-			str = "잔액이 모자랍니다. 다시 입력주세요.";
+			str = "잔액이 모자랍니다. 다시 입력 해주세요.";
 		} else {
 			balance -= money1;
 		}
