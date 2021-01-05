@@ -29,7 +29,6 @@ public class MemoUI {
 			System.out.println("마음의 준비를 하고 ENTER");
 			scanner.nextLine();
 			
-
 			Memo memo = service.getNextMemo();
 			String text = memo.getText();
 			if (text.equals("X")) {

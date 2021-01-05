@@ -8,9 +8,9 @@ public class PiggyUI {
 	// 조력자/의존성
 	PiggyService service;
 
-	public PiggyUI() {
+	public PiggyUI(PiggyService service) {
 		scanner = new Scanner(System.in);
-		service = new PiggyService();
+		
 	}
 
 	// 입금인지 출금인지
