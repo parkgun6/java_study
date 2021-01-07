@@ -22,5 +22,12 @@
     <fullyQualifiedTypeName name="lombok.NonNull"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="d11.main"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="org.store.service.StoreService"/>
+    <fullyQualifiedTypeName name="org.store.domain.Store"/>
+    <fullyQualifiedTypeName name="org.employee.domain.RegularEmployee"/>
+    <fullyQualifiedTypeName name="org.employee.domain.TempEmployee"/>
+    <fullyQualifiedTypeName name="org.employee.domain.PartTimeEmployee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

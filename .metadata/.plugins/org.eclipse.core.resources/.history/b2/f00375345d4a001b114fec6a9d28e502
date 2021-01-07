@@ -1,8 +1,0 @@
-package d7;
-
-public class AreaService {
-public double  calcArea(double radius1,double radius2) {
-	double result = 0;
-	return result;
-}
-}
