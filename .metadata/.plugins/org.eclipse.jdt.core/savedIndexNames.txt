@@ -1,20 +1,2 @@
 INDEX VERSION 1.131+D:\MyStudy\01.Java\java_study1\.metadata\.plugins\org.eclipse.jdt.core
-1365354486.index
-3508984583.index
-1775159313.index
-978003540.index
-3738562168.index
-680851516.index
-2254799305.index
-4111409914.index
-967719751.index
-1675798462.index
-3889054686.index
-532379929.index
-1128940278.index
-180624088.index
-674487490.index
-3410383372.index
-2868122618.index
-2063577931.index
-3516686826.index
+4290480386.index

@@ -1,9 +1,0 @@
-import org.bmi.ui.BMIUserInterface;
-
-public class Main {
-public static void main(String[] args) {
-	
-	BMIUserInterface userInterface = new BMIUserInterface();
-	userInterface.input();
-}
-}

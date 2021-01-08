@@ -2,5 +2,7 @@ package shape;
 
 public interface Areable{
 	
-	double getArea();
+	double getArea() {
+		
+	}
 }

@@ -11,11 +11,9 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="bbb2.Memo2"/>
     <fullyQualifiedTypeName name="bbb2.MemoUI2"/>
-    <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="bbb2.MemoUI"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.ToString"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="ord.word.domain.Word"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
@@ -29,5 +27,10 @@
     <fullyQualifiedTypeName name="org.employee.domain.RegularEmployee"/>
     <fullyQualifiedTypeName name="org.employee.domain.TempEmployee"/>
     <fullyQualifiedTypeName name="org.employee.domain.PartTimeEmployee"/>
+    <fullyQualifiedTypeName name="bmi3.BMICalculator"/>
+    <fullyQualifiedTypeName name="bmi3.BMICalculatorImpl"/>
+    <fullyQualifiedTypeName name="bmi3.BMI3UI"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
 </qualifiedTypeNameHistroy>
