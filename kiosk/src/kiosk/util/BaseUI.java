@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public  abstract class BaseUI {
 
-	private Scanner scanner;
+	protected Scanner scanner;
 	
 	protected void print(String msg) {
 		System.out.println(msg);

@@ -1,5 +1,7 @@
 package kiosk.order;
 
+import java.util.ArrayList;
+
 import kiosk.menu.Menu;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,11 +12,11 @@ import lombok.ToString;
 @ToString
 public class OrderItem {
 
-	private Menu menu;
+	private ArrayList<Menu> menu;
 	private int qty;
 	
 	public int getItemPrice() {
-		return menu.getPrice() * qty;
+		return menu.get(0).getPrice() * qty;
 	}
 	
 }
