@@ -10,7 +10,7 @@ public class TestClient {
 	//bad code
 	public static void main(String[] args) throws Exception{
 		
-		Socket socket = new Socket("127.0.0.1", 5555);
+		Socket socket = new Socket("127.0.0.1", 8080);
 		System.out.println(socket);
 		
 		String msg = "Hello World\n";
