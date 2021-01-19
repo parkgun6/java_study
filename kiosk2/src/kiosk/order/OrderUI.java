@@ -34,11 +34,11 @@ public class OrderUI extends BaseUI {
 		while (true) {
 			inputNum = inputInt("");
 			orderNum = choiceCategoryMenu(inputNum);
-			print("ÁÖ¹®À» ¹Ş°Ú½À´Ï´Ù.");
+			print("ì£¼ë¬¸ì„ ë°›ê² ìŠµë‹ˆë‹¤.");
 
-			// ¸Ş´º¹øÈ£¸¦ ÀÔ·Â ¹Ş´Â´Ù.
-			menuIndex = inputInt("¸Ş´º ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
-			// ÇØ´ç ¸Ş´º¸¦ °¡Á®¿Â´Ù.
+			// ë©”ë‰´ë²ˆí˜¸ë¥¼ ì…ë ¥ ë°›ëŠ”ë‹¤.
+			menuIndex = inputInt("ë©”ë‰´ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+			// í•´ë‹¹ ë©”ë‰´ë¥¼ ê°€ì ¸ì˜¨ë‹¤.
 			if (orderNum == 1) {
 				menu = service.getSelectMainMenu(menuIndex);
 			} else if (orderNum == 2) {
@@ -48,71 +48,68 @@ public class OrderUI extends BaseUI {
 			} else if (orderNum == 4) {
 				menu = service.getSelectSetMenu(menuIndex);
 			}
-			// ¸Ş´ºÀÇ ¼ö·® ÀÔ·Â ¹Ş´Â´Ù.
-			int qty = inputInt("ÁÖ¹®ÇÒ ¼ö·®À» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			// ë©”ë‰´ì˜ ìˆ˜ëŸ‰ ì…ë ¥ ë°›ëŠ”ë‹¤.
+			int qty = inputInt("ì£¼ë¬¸í•  ìˆ˜ëŸ‰ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 
-			// OrderItem °´Ã¼¸¦ »ı¼º
+			// OrderItem ê°ì²´ë¥¼ ìƒì„±
 			OrderItem orderItem = new OrderItem(menu, qty);
 
-			// items¿¡ Ãß°¡
+			// itemsì— ì¶”ê°€
 			items.add(orderItem);
 
-			// ÁÖ¹®À» Ãß°¡ÇÒ°ÇÁö
-			String answer = inputStr("°áÁ¦ÇÏ±â´Â n »óÇ°À» ´Ù½Ã ±¸ÀÔÇÏ·Á¸é y");
+			// ì£¼ë¬¸ì„ ì¶”ê°€í• ê±´ì§€
+			String answer = inputStr("ê²°ì œí•˜ê¸°ëŠ” n ìƒí’ˆì„ ë‹¤ì‹œ êµ¬ì…í•˜ë ¤ë©´ y");
 			if (answer.equals("n")) {
 				break;
-			}else if(answer.equals("y")) {
+			} else if (answer.equals("y")) {
 				menuUI.showAllMenus();
 			}
 
 		} // end while
 
-		// Order¸¦ »ı¼º
+		// Orderë¥¼ ìƒì„±
 		Ordertemp order = new Ordertemp(items);
 
-		// Order¸¦ Ãâ·Â
-		
-		
-		int total = order.getTotal();
-		while(true) {
-            System.out.println("ÃÑ ±İ¾× " + total + "¿ø ÀÔ´Ï´Ù.");
-            System.out.println("Àü¾× ÄíÆù °áÁ¦ : 1\nÀü¾× Çö±İ °áÁ¦ : 2");
-            String payChoice = inputStr("");
-            switch(payChoice) {
-            case"1":
-            	System.out.println("ÄíÆù¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
-            	String couponName = inputStr("");
-            	if(couponName.equals("burger"))
-            		total = 0;
-            	break;
-            case"2":
-            System.out.print("Çö±İ ¾ó¸¶ ÀÔ±İÇÏ½Ã°Ú½À´Ï±î? : ");
-            int money = inputInt("");
+		// Orderë¥¼ ì¶œë ¥
 
-            if(money < total) {
-                System.out.println("µ·ÀÌ ¸ğÀÚ¶ø´Ï´Ù.");
-                continue;
-            } else {
-                System.out.println("°Å½º¸§µ·" + (money - total) + "¿ø ÀÔ´Ï´Ù.");
-                break;
-            }
-            }break;
-        }
-            
-        
-	        
-		print("--------------¿µ¼öÁõ---------------");
+		int total = order.getTotal();
+		while (true) {
+			System.out.println("ì´ ê¸ˆì•¡ " + total + "ì› ì…ë‹ˆë‹¤.");
+			System.out.println("ì „ì•¡ ì¿ í° ê²°ì œ : 1\nì „ì•¡ í˜„ê¸ˆ ê²°ì œ : 2");
+			String payChoice = inputStr("");
+			switch (payChoice) {
+			case "1":
+				System.out.println("ì¿ í°ëª…ì„ ì…ë ¥í•˜ì„¸ìš”.");
+				String couponName = inputStr("");
+				if (couponName.equals("burger"))
+					total = 0;
+				break;
+			case "2":
+				System.out.print("í˜„ê¸ˆ ì–¼ë§ˆ ì…ê¸ˆí•˜ì‹œê² ìŠµë‹ˆê¹Œ? : ");
+				int money = inputInt("");
+
+				if (money < total) {
+					System.out.println("ëˆì´ ëª¨ìëë‹ˆë‹¤.");
+					continue;
+				} else {
+					System.out.println("ê±°ìŠ¤ë¦„ëˆ" + (money - total) + "ì› ì…ë‹ˆë‹¤.");
+					break;
+				}
+			}
+			break;
+		}
+
+		print("--------------ì˜ìˆ˜ì¦---------------");
 		print("OREDR NUM: " + order.getOrderNum());
 		print("----------------------------------");
 		for (OrderItem orderItem : items) {
-			print(orderItem.getMenu().get(0).getName() + "   ¼ö·® : " + orderItem.getQty() + " °¡°İ : " + orderItem.getItemPrice()+"¿ø");
+			print(orderItem.getMenu().get(0).getName() + "   ìˆ˜ëŸ‰ : " + orderItem.getQty() + " ê°€ê²© : "
+					+ orderItem.getItemPrice() + "ì›");
 		}
-		
 
-		   
-	    print("=================================");
+		print("=================================");
 		print("TOTAL: " + total);
-		print("========°áÁ¦°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.========");
+		print("========ê²°ì œê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.========");
 	}
 
 	public int choiceCategoryMenu(int number) {
@@ -122,14 +119,14 @@ public class OrderUI extends BaseUI {
 
 			for (int i = 0; i < mainList.size(); i++) {
 				System.out
-						.println((i + 1) + " : " + mainList.get(i).getName() + "," + mainList.get(i).getPrice() + "¿ø");
+						.println((i + 1) + " : " + mainList.get(i).getName() + "," + mainList.get(i).getPrice() + "ì›");
 			}
 		} else if (number == 2) {
 			ArrayList<Menu> drinkList = service.getDrinkMenu();
 
 			for (int i = 0; i < drinkList.size(); i++) {
 				System.out.println(
-						(i + 1) + " : " + drinkList.get(i).getName() + "," + drinkList.get(i).getPrice() + "¿ø");
+						(i + 1) + " : " + drinkList.get(i).getName() + "," + drinkList.get(i).getPrice() + "ì›");
 			}
 
 		} else if (number == 3) {
@@ -137,14 +134,14 @@ public class OrderUI extends BaseUI {
 
 			for (int i = 0; i < sideList.size(); i++) {
 				System.out
-						.println((i + 1) + " : " + sideList.get(i).getName() + "," + sideList.get(i).getPrice() + "¿ø");
+						.println((i + 1) + " : " + sideList.get(i).getName() + "," + sideList.get(i).getPrice() + "ì›");
 			}
 
 		} else if (number == 4) {
 			ArrayList<Menu> setList = service.getSetMenu();
 
 			for (int i = 0; i < setList.size(); i++) {
-				System.out.println((i + 1) + " : " + setList.get(i).getName() + "," + setList.get(i).getPrice() + "¿ø");
+				System.out.println((i + 1) + " : " + setList.get(i).getName() + "," + setList.get(i).getPrice() + "ì›");
 			}
 		}
 

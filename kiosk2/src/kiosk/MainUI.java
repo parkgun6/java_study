@@ -14,9 +14,10 @@ public class MainUI extends BaseUI {
 	
 	public void welcome() {
 		
-		inputStr("½ÃÀÛÇÏ½Ã·Á¸é EnterÇØ ÁÖ¼¼¿ä");
+
+		inputStr("ì‹œì‘í•˜ì‹œë ¤ë©´ Enterí•´ ì£¼ì„¸ìš”");
 		
-		print("Áö±İºÎÅÍ ¸Ş´º¸¦ º¸¿©µå¸®°í ÁÖ¹®À» ¹Ş°Ú½À´Ï´Ù.");
+		print("ì§€ê¸ˆë¶€í„° ë©”ë‰´ë¥¼ ë³´ì—¬ë“œë¦¬ê³  ì£¼ë¬¸ì„ ë°›ê² ìŠµë‹ˆë‹¤.");
 
 		menuUI.showAllMenus();
 		orderUI.makeOrder();

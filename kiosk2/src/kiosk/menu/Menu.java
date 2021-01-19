@@ -1,14 +1,10 @@
 package kiosk.menu;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
 @AllArgsConstructor
-@Getter
-@ToString
-@Setter
+@Data
 public class Menu {
 	private String name;
 	private int price;
